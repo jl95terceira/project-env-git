@@ -1,6 +1,6 @@
 import os.path
 
-from jl95terceira.pytools.envlib import var
+from jl95.pytools.envlib import var
 
 GIT_HOME         = var(name       ='git.home', 
                        description='the home of Git')

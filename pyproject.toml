@@ -3,7 +3,7 @@ requires = ["hatchling", "hatch-requirements-txt"]
 build-backend = "hatchling.build"
 [project]
 name = "jl95terceira_pytools_env_git"
-version = "0.1.1"
+version = "0.1.2"
 authors = [
   { name="Joao Luis Ornelas da Silva", email="jl95terceira@gmail.com" },
 ]
@@ -22,10 +22,11 @@ Homepage = "https://github.com/jl95terceira/project-env-git"
 Issues = "https://github.com/jl95terceira/project-env-git/issues"
 
 [tool.hatch.build.targets.wheel]
-packages = ["project/package"]
+packages = ["project/package","project/package_DEPRECATED"]
 
 [tool.hatch.build.targets.wheel.sources]
-"project/package" = "jl95terceira/pytools/envlib/vars/git"
+"project/package" = "jl95/pytools/envlib/vars/git"
+"project/package_DEPRECATED" = "jl95terceira/pytools/envlib/vars/git"
 
 [tool.hatch.metadata.hooks.requirements_txt]
 files = ["requirements.txt"]
